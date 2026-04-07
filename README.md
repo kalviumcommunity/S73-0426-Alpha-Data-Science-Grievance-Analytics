@@ -1,65 +1,114 @@
-# ⚙️ Environment Setup Verification
+# ⚙️ Environment Verification for Data Science Setup
 
 ## 📌 Overview
 
-This document serves as proof that my local system is properly set up for Data Science work. It verifies that both Python and Anaconda are installed and functioning correctly.
+This document verifies that my local system is fully ready for Data Science work. It confirms that Python, Conda environments, and Jupyter Notebook are functioning correctly and can be reliably used throughout the sprint.
 
 ---
 
-## 🐍 Python Installation
+## 💻 System Information
 
-Python is successfully installed on my local machine and accessible via the terminal.
+- Operating System: Windows  
+- Python Version: Verified via terminal  
+- Conda Version: Verified via terminal  
+- Environment Used: base / ds_env  
 
-**Command Used:**
+---
+
+## 🐍 Python Verification
+
+Python is installed and accessible via the terminal.
+
+**Command Used:**  
 `python --version`
 
 **Verification:**  
-The output confirms that Python is installed and working correctly.
+The command runs successfully and confirms that Python is installed and working correctly.
+
+Additionally, Python interpreter was launched using:
+`python`
+
+Simple commands were executed successfully inside the Python REPL, confirming that Python is stable.
 
 ---
 
-## 🧪 Anaconda Installation
+## 🧪 Conda Verification
 
-Anaconda is installed successfully and provides a working Conda environment manager.
+Conda is installed and functioning correctly.
 
 **Command Used:**  
 `conda --version`
 
 **Verification:**  
-The output confirms that Conda is installed and accessible via the terminal.
+The output confirms that Conda is installed and accessible.
 
 ---
 
-## ▶️ Python Execution Check
+## 🔁 Conda Environment Verification
 
-Python runs without any errors in the terminal.
+Conda environments are working correctly.
 
-**Command Used:**  
-`python`
+**Commands Used:**
+
+`conda env list`  
+`conda activate ds_env`
 
 **Verification:**  
-The Python interpreter starts successfully, confirming that the environment is functional.
+- Available environments are listed successfully  
+- Environment activates correctly  
+- Active environment is visible in terminal prompt  
 
-**To exit:**  
-`exit()`
-
----
-
-## ✅ Setup Status
-
-- Python is installed and working  
-- Anaconda (Conda) is installed and working  
-- Terminal access is verified  
-- Environment is ready for Data Science and Machine Learning work  
+This confirms that Conda environment management is working properly.
 
 ---
 
-## 🧠 Environment Practices
+## 📓 Jupyter Notebook Verification
 
-To ensure smooth collaboration and avoid issues:
+Jupyter Notebook launches successfully and executes Python code.
+
+**Command Used:**  
+`jupyter notebook`
+
+**Verification Steps:**
+- Jupyter opens in browser without errors  
+- A new notebook is created  
+- A Python cell is executed successfully  
+
+**Example Code Run:**  
+`print("Environment Setup Successful")`
+
+**Verification:**  
+The output is displayed correctly, confirming that Jupyter is working properly with Python.
+
+---
+
+## ✅ Final Verification Status
+
+- Python is installed and working correctly  
+- Conda is installed and environments are functional  
+- Conda environment activation works correctly  
+- Jupyter Notebook launches successfully  
+- Python code executes correctly inside Jupyter  
+
+The system is fully ready for Data Science workflows.
+
+---
+
+## 🧠 Environment Consistency
+
+To ensure consistent behavior across systems:
 
 - Conda environments will be used to manage dependencies  
-- Consistent Python versions will be maintained across the team  
-- Required libraries will be installed within isolated environments  
+- Same Python version will be maintained across team members  
+- Jupyter will use the correct environment kernel  
 
-This helps prevent conflicts and ensures that code behaves consistently across different systems.
+This prevents issues such as:
+- Version mismatches  
+- Missing libraries  
+- Different behavior across machines  
+
+---
+
+## 🚀 Conclusion
+
+The environment has been successfully verified and is stable, consistent, and ready for Data Science development. This setup will be used throughout the sprint to ensure reliable and reproducible results.
